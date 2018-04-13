@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<h1>{{user}}</h1>
+{% for k,v in user.items%}
+<h2>{{forloop.counter}}. {{k}}:{{v}}</h2>
+{% endfor %}
+{% if user %}
+    <h1>hello {{user}}</h1>
+{% else %}
+    <h1>用户不存在</h1>
+{% endif %}
+id:{{id}}
+</body>
+</html>
