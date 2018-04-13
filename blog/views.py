@@ -59,6 +59,6 @@ def select0(req,name):
 def update(req,name,auther):
     book1=Book.objecs.filter(name=name).first()
     print(book1)
-    au=book1.authors.set()
+    au=book1.authors.
 
 
