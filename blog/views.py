@@ -57,8 +57,8 @@ def select0(req,name):
     return render(req,'select.html',{'name':au})
 
 def update(req,name,auther):
-    book1=Book.objecs.filter(name=name).first()
+    print(name,auther)
+    book1=Book.objects.filter(name=name).first()
     print(book1)
-    au=book1.authors.
-
-
+    au=book1.authors.set([2])
+    return render(req,'select.html',{'name':au})

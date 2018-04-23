@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^select2/(?P<name>[a-z]{4})/$', views.select2),#查询数据
     url(r'^select0/(?P<name>[a-z]{6})/$', views.select0),#查询数据
     url(r'^select2/(?P<name>[a-z]{4}_[a-z]{4})/$', views.select2),#查询数据
+    url(r'^update/(?P<name>[a-z]{6})/(?P<auther>[a-z]{4})/$', views.update),#查询数据
     url(r'^createauthor/(?P<name>[a-z]{4})/$', views.createauthor),#查询数据
     url(r'^selectauthorall/$', views.selectauthorall),#查询数据
     url(r'^addbook/(?P<name>[a-z]{6})/(?P<author>[a-z]{4})/$', views.addbook),#查询数据
